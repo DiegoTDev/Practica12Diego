@@ -56,10 +56,10 @@
                 <div id="resultadoA">
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                        $gravedadSuperfice = 9.8;
+                        $gravedadSuperficie = 9.8;
                         $radioTierra =  6371000;
                         $altura = 1;
-                        $gravedadEnAltura = $gravedadEnAltura * ($radioTierra / pow((($radioTierra * $altura)), 2));
+                        $gravedadEnAltura = $gravedadSuperficie * ($radioTierra / pow((($radioTierra * $altura)), 2));
                         echo $gravedadEnAltura . ' gravedad';
                     }
                     ?>
